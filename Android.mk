@@ -21,6 +21,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+LOCAL_JACK_ENABLED := false
+
 ifeq ($(TARGET_DEVICE),kenzo)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
