@@ -17,10 +17,14 @@
 # inherit from common msm8956-common
 -include device/xiaomi/msm8956-common/BoardConfigCommon.mk
 
+
+
 DEVICE_PATH := device/xiaomi/kenzo
 
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := kate,kenzo
+
+ANDROID_COMPILE_WITH_JACK := false
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -40,3 +44,5 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
+
+
